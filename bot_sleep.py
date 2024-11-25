@@ -3,7 +3,7 @@ from telebot import types # для указание типов
 from time import sleep
 
 
-bot=telebot.TeleBot('7865451440:AAHAjnvD-mwgWvKhINYfTk4xbQlUQRyIr-M')
+bot=telebot.TeleBot
 
 @bot.message_handler(commands=['start']) #создаем команду
 def start(message):
