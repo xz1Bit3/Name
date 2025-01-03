@@ -1,0 +1,21 @@
+2025-01-03 13:38:51,217 | INFO | "test_challenge" выполнен успешно
+2025-01-03 13:38:51,218 | WARNING | Неверный тип данных для объекта Runner
+Имя может быть только строкой, передано int
+2025-01-03 13:38:51,218 | WARNING | Traceback (most recent call last):
+  File "C:\Практика 1.0\Практика 1.0\.venv\tests_12_4.py", line 82, in test_run
+    runner = Runner(2)
+             ^^^^^^^^^
+  File "C:\Практика 1.0\Практика 1.0\.venv\tests_12_4.py", line 14, in __init__
+    raise TypeError(f'Имя может быть только строкой, передано {type(name).__name__}')
+TypeError: Имя может быть только строкой, передано int
+
+2025-01-03 13:38:51,218 | WARNING | Неверная скорость для Runner
+Скорость не может быть отрицательной, сейчас -5
+2025-01-03 13:38:51,221 | WARNING | Traceback (most recent call last):
+  File "C:\Практика 1.0\Практика 1.0\.venv\tests_12_4.py", line 71, in test_walk
+    runner = Runner("Вася", -5)
+             ^^^^^^^^^^^^^^^^^^
+  File "C:\Практика 1.0\Практика 1.0\.venv\tests_12_4.py", line 19, in __init__
+    raise ValueError(f'Скорость не может быть отрицательной, сейчас {speed}')
+ValueError: Скорость не может быть отрицательной, сейчас -5
+
