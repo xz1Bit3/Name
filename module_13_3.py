@@ -11,14 +11,12 @@ dp = Dispatcher(bot, storage = MemoryStorage())
 
 @dp.message_handler(text= ['Привет'])
 async def urban_message(message):
-    print('Intro message')
     await message.answer('Введите команду /start что бы начать общение')
 
 
 
 @dp.message_handler(commands= ['start'])
 async def start_message(message):
-    print('Start message')
     await message.answer('Привет, я бот помогающий твоему здоровью!')
 
 
